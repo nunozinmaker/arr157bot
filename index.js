@@ -92,13 +92,13 @@ global.prems = ['6288235435804@s.whatsapp.net']
 
 global.dfail = (type, m, conn) => {
   let msg = {
-    owner: 'Perintah ini hanya dapat digunakan oleh Owner Nomor!',
-    mods: 'Perintah ini hanya dapat digunakan oleh Moderator!',
-    premium: 'Perintah ini hanya untuk member Premium!',
-    group: 'Perintah ini hanya dapat digunakan di Grup!',
-    private: 'Perintah ini hanya dapat digunakan di Chat Pribadi!',
-    admin: 'Anda bukan admin grup!',
-    botAdmin: 'Jadikan bot sebagai admin untuk menggunakan perintah ini!'
+    owner: 'Este comando só pode ser usado pelo Proprietário do bot!',
+    mods: 'Este comando só pode ser usado por moderadores!',
+    premium: 'Este comando é apenas para membros Premium!',
+    group: 'Este comando só pode ser usado em grupos!',
+    private: 'Este comando só pode ser usado em Chats Privados!',
+    admin: 'Você não é um administrador desse grupo!',
+    botAdmin: 'Coloque o bot como administrador para usar este comando!'
   }[type]
   msg && conn.reply(m.chat, msg, m)
 }
